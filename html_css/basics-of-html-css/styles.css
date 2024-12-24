@@ -1,0 +1,83 @@
+.button {
+    background-color: rgb(202, 14, 14);
+    color: white;
+    border: none;
+    /* height: 36px;
+    width: 105px; */
+    border-radius: 2px;
+    cursor: pointer; 
+    /* For spacing we use margins */
+    margin-right: 8px;
+    margin-left: 20px;
+    /* Smoothly transition grap the element first then how many seconds */
+    transition: opacity 0.15s;
+    /* Padding */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* Alignment */
+    vertical-align: top;
+}
+
+/* CSS for when we hover over the button */
+.button:hover {
+    /* Fade out an element */
+    opacity: 0.8;
+}
+
+/* CSS for when we click on the button */
+.button:active {
+    opacity: 0.5;
+}
+
+.join {
+    background-color: white;
+    border-radius: 3px;
+    color: rgb(78, 151, 242);
+    /* width: 60px; 
+    height: 35px; */
+    border-color: rgb(78, 151, 242);
+    /* size of border */
+     border-width: 1px;
+    margin-right: 4px; 
+    cursor: pointer;
+    transition: background-color 0.15s, 
+    color 0.15s;
+    /* Spacing inside of the button is called padding */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.join:hover {
+    background-color: rgb(78, 151, 242);
+    color: white;
+}
+
+.join:active {
+    opacity: 0.7;
+}
+
+.tweet {
+    background-color: rgb(24, 153, 233);
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    border: none;
+    font-weight: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    /* Alignment */
+    vertical-align: top;
+
+}
+
+.tweet:hover {
+        /* Add a shadow behind the button */
+    /* First is horizontal second is vertical third is blur */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
