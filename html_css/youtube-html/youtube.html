@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,6 +22,7 @@
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
                 <img class="search-icon" src="./icons/search.svg">
+                <div>Search</div>
             </button>
             <button class="voice-search-button">
                 <img class="voice-button" src="./icons/voice-search-icon.svg"/>
@@ -29,14 +31,49 @@
         <div class="right-section">
             <img class="upload-icon" src="./icons/upload.svg"/>
             <img class="youtube-apps-icon" src="./icons/youtube-apps.svg"/>
-            <img class="notification-icon" src="./icons/notifications.svg"/>
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="./icons/notifications.svg"/>
+                <div class="notifications-count">
+                    3
+                </div>
+            </div>
             <img class="current-icon" src="./channel-pictures/channels4_profile (1).jpeg"/>
         </div>
     </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img src="./icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/youtube-music.svg">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="./icons/library.svg">
+            <div>Library</div>
+        </div>
+    </div>
+
     <div class="video-grid">
         <div class="video-preview">
-            <div class="numbnail-row">
-                <img class="thumbnail" src="https://i.ytimg.com/vi/rVBtZH8vB9E/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB9N59mm0uNCUwuVB12peCrHT5IHQ">
+            <div class="thumbnail-row">
+                <img class="thumbnail" 
+                src="https://i.ytimg.com/vi/rVBtZH8vB9E/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB9N59mm0uNCUwuVB12peCrHT5IHQ"/>
+                <div class="video-time">6:08</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -57,8 +94,9 @@
         </div>
 
         <div class="video-preview">
-            <div class="numbnail-row">
+            <div class="thumbnail-row">
                 <img class="thumbnail" src="https://i.ytimg.com/vi/T8ZKo8Wa7hw/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLDtLp214293lk0MSFDRj0h_W3uxUg">
+                <div class="video-time">6:08</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -79,8 +117,9 @@
         </div>
 
         <div class="video-preview">
-            <div class="numbnail-row">
+            <div class="thumbnail-row">
                 <img class="thumbnail" src="	https://i.ytimg.com/vi/314OLE6mKOo/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLAjpWUrUJfXrJvfAcpe-1J0W0YL_w">
+                <div class="video-time">6:08</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -101,8 +140,9 @@
         </div>
 
         <div class="video-preview">
-            <div class="numbnail-row">
+            <div class="thumbnail-row">
                 <img class="thumbnail" src="https://i.ytimg.com/vi/wsTv9y931o8/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLCHGxCJe_3CtJNfIMe6ckhh5OqBmQ">
+                <div class="video-time">6:08</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -123,12 +163,13 @@
         </div>
 
         <div class="video-preview">
-            <div class="numbnail-row">
+            <div class="thumbnail-row">
                 <img class="thumbnail" src="https://i.ytimg.com/vi/tS7upsfuxmo/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLA92S0fP58MKsAEAzWR3E7EMQeZkg">
+                <div class="video-time">6:08</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/neetcodepic.jpeg" >
+                    <img class="profile-picture" src="./channel-pictures/js.jpg" >
                 </div>
                 <div class="video-info">
                     <p class="video-title">
@@ -145,8 +186,9 @@
         </div>
 
         <div class="video-preview">
-            <div class="numbnail-row">
+            <div class="thumbnail-row">
                 <img class="thumbnail" src="https://i.ytimg.com/vi/iOeebAM_C5g/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB-8PCSLcLgl7dgmC3coLl37o4skg">
+                <div class="video-time">6:08</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
