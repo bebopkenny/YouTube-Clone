@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    <script>
+        // const product = {
+        //     name: 'sock',
+        //     price: 1090,
+        // };
+
+        // console.log(product);
+        // console.log(product.name); // sock
+        // console.log(product.price) // 1090
+
+        // product.name = 'cotton socks'; // change name value
+        // console.log(product);
+
+        // product.newProperty = true; // this is how you add a new key with a value
+        // console.log(product);
+
+        // delete product.newProperty; // to delete a key
+        // console.log(product);
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1 day',
+            rating: {
+                starts: 4.5,
+                count: 87,
+            },
+            fun: function function1() {
+                console.log('function insdie object');
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']); // bracket notation for accessing a key's value
+        console.log(product2['delivery-time']);
+
+        console.log(product2.rating.count);
+        product2.fun();
+
+        console.log(typeof console.log);
+
+        console.log(JSON.stringify(product2));
+        
+        const jsonString = JSON.stringify(product2); // how to convert a json back to javascript
+        console.log(JSON.parse(jsonString)) 
+        
+    </script>
+</body>
+</html>

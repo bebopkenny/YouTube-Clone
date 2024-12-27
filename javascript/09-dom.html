@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+    <script>
+        /*
+        document.body.innerHTML = 'hello'; // removes everything
+        document.title = 'Good job!'; // changing the title property
+        */
+
+        /*
+        console.log(document.title);
+        document.title = 'Changed';
+
+        console.log(document.body); 
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = '<button>Good Job!</button>'; // Changes everything in HTML body with "Changed!"
+        */
+        console.log(document.querySelector('button')); // gets the first button
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button').innerHTML = 'Changed'; // change the button value to changed
+        
+        console.log(document.querySelector('.js-button'));
+        document.querySelector('.js-button'); // queryselector using a class
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
+
+    </script>
+</body>
+</html>
