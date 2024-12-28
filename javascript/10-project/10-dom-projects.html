@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="10-styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Projects</title>
@@ -15,7 +16,7 @@
     <input class="js-cost-input" onkeydown="handleCostKeydown(event)" 
     placeholder="Cost of order"/>
 
-    <button onclick="calculateTotal();">Calculate</button>
+    <button class="cost-button" onclick="calculateTotal();">Calculate</button>
 
     <p class="js-total-cost"></p>
 
@@ -52,8 +53,10 @@
 
                 if (buttonElement.innerText === 'Subscribe') {
                     buttonElement.innerHTML = 'Subscribed';
+                    buttonElement.classList.add('is-subscribed'); // this is going to let us CSS when the button is clicked to 'Subscribed'
                 } else {
                     buttonElement.innerHTML = 'Subscribe';
+                    buttonElement.classList.remove('is-subscribed');
                 }
             }
     </script>
