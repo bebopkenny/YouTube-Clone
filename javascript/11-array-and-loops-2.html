@@ -26,17 +26,39 @@
 
         console.log(randomNumber);
 
+        /*
         const todoList = [
             'make dinner',
             'wash dishes',
             'watch YouTube',
         ];
+        
 
-        for (let index = 0; index <= todoList.length - 1; index++) {
+        // same as for (let index = 0; index <= todoList.length - 1; index++) { ... }
+        for (let index = 0; index < todoList.length; index++) {
             const value = (todoList[index]); // how we access the values
             console.log(value);
             console.log(index); // how we access the indexes
         }
+        */
+
+        const nums = [1, 1, 3];
+        let total = 0;
+        for (let i = 0; i < nums.length; i++) {
+            console.log(nums[i]); // index value
+            console.log(i); // index number position
+            const num = nums[i];
+            total = total + num;
+        }
+        console.log(total);
+
+        total2 = 1;
+        for (let i = 0; i < nums.length; i++) {
+            let num = nums[i]; // accessing the value
+            new_num = num * 2;
+            nums[i] = new_num; // replace the value with the new num
+        }
+        console.log(nums);
     </script>
 </body>
 </html>
