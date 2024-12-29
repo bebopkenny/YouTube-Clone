@@ -35,13 +35,19 @@
     });
     */
 
+    // Asynchronous Code - won't wait for a line to finish before going to the next line
     setTimeout(function() { // first parameter is the function you want; the second is how many seconds
         console.log('timeout');
+        console.log('timeout2');
     }, 3000);
     
-    // Asynchronous Code - won't wait for a line to finish before going to the next line
     console.log('next line'); // this is display first because the first function still needs to wait 3 seconds
-    // 9:43
+    
+    setInterval(function() { // This is run the function every 3 seconds
+        console.log('interval');
+    }, 3000); 
+
+    console.log('next line 2');
     </script>
 </body>
 </html>
