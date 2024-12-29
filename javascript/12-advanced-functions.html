@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <script>
+    /*
+    function greeting() {
+        console.log('hello');
+    }        
+    greeting();
+
+    const object1 = {
+        num: 2,
+        fun: function greeting() {
+            console.log('hello3');
+        }
+    };
+    object1.fun();
+
+    function display(param) {
+        console.log(param);
+    }
+    display(2);
+
+    function run(param) {
+        param();
+    }
+
+    run(function() {
+        console.log('hello4');
+    });
+    */
+
+    setTimeout(function() { // first parameter is the function you want; the second is how many seconds
+        console.log('timeout');
+    }, 3000);
+    
+    // Asynchronous Code - won't wait for a line to finish before going to the next line
+    console.log('next line'); // this is display first because the first function still needs to wait 3 seconds
+    // 9:43
+    </script>
+</body>
+</html>
