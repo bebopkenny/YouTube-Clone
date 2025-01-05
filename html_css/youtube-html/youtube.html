@@ -13,23 +13,29 @@
     <title>YouTube Clone</title>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger-menu" src="./icons/hamburger-menu (1).svg"/>
+        <a href="youtube.kennygarcia.net" target="_blank">
             <img class="youtube-logo" src="./icons/youtube-logo.svg"/>
+        </a>    
         </div>
         <div class="middle-section">   
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
                 <img class="search-icon" src="./icons/search.svg">
-                <div>Search</div>
+                <div class="tooltip">Search</div>
             </button>
             <button class="voice-search-button">
-                <img class="voice-button" src="./icons/voice-search-icon.svg"/>
+                <img class="voice-search-icon" src="./icons/voice-search-icon.svg"/>
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
-            <img class="upload-icon" src="./icons/upload.svg"/>
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="./icons/upload.svg"/>
+                <div class="tooltip">Create</div>
+            </div>
             <img class="youtube-apps-icon" src="./icons/youtube-apps.svg"/>
             <div class="notification-icon-container">
                 <img class="notification-icon" src="./icons/notifications.svg"/>
@@ -39,11 +45,13 @@
             </div>
             <img class="current-icon" src="./channel-pictures/channels4_profile (1).jpeg"/>
         </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-link">
+        <a href="youtube.kennygarcia.net" target="_blank">
             <img src="./icons/home.svg">
+        </a>    
             <div>Home</div>
         </div>
         <div class="sidebar-link">
@@ -51,7 +59,9 @@
             <div>Explore</div>
         </div>
         <div class="sidebar-link">
+        <a href="https://www.youtube.com/feed/subscriptions" target="_blank">
             <img src="./icons/subscriptions.svg">
+        </a>    
             <div>Subscriptions</div>
         </div>
         <div class="sidebar-link">
@@ -59,155 +69,187 @@
             <div>Originals</div>
         </div>
         <div class="sidebar-link">
+        <a href="https://music.youtube.com/" target="_blank">
             <img src="./icons/youtube-music.svg">
+        </a>    
             <div>YouTube Music</div>
         </div>
         <div class="sidebar-link">
+        <a href="https://www.youtube.com/feed/you" target="_blank">
             <img src="./icons/library.svg">
+        </a>    
             <div>Library</div>
         </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" 
-                src="https://i.ytimg.com/vi/rVBtZH8vB9E/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB9N59mm0uNCUwuVB12peCrHT5IHQ"/>
-                <div class="video-time">6:08</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/neetcodepic.jpeg" >
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=UrcwDOEBzZE" target="_blank">
+                    <img class="thumbnail" 
+                    src="https://i.ytimg.com/vi/rVBtZH8vB9E/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB9N59mm0uNCUwuVB12peCrHT5IHQ"/>
+                </a>
+                    <div class="video-time">6:08</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Most Common Concepts for Coding Interviews
-                    </p>
-                    <p class="video-author">
-                        NeetCode &check;
-                    </p>
-                    <p class="video-stats">
-                        342K views &middot; 1 year ago
-                    </p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                    <a href="https://www.youtube.com/@NeetCode" target="_blank">
+                        <img class="profile-picture" src="./channel-pictures/neetcodepic.jpeg" >
+                    </a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Most Common Concepts for Coding Interviews
+                        </p>
+                        <p class="video-author">
+                            NeetCode &check;
+                        </p>
+                        <p class="video-stats">
+                            342K views &middot; 1 year ago
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=T8ZKo8Wa7hw&t=9s" target="_blank">
+                    <img class="thumbnail" src="https://i.ytimg.com/vi/T8ZKo8Wa7hw/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLDtLp214293lk0MSFDRj0h_W3uxUg">
+                </a>
+                    <div class="video-time">6:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                    <a href="https://www.youtube.com/@ThePrimeagen" target="_blank">
+                        <img class="profile-picture" src="./channel-pictures/theprimeagenprofile.jpeg" >
+                    </a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            How To Find Time To Learn After Work | Prime Reacts
+                        </p>
+                        <p class="video-author">
+                            ThePrimeagen &check;
+                        </p>
+                        <p class="video-stats">
+                            534K views &middot; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=314OLE6mKOo" target="_blank">
+                    <img class="thumbnail" src="https://i.ytimg.com/vi/314OLE6mKOo/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLAjpWUrUJfXrJvfAcpe-1J0W0YL_w">
+                </a>    
+                    <div class="video-time">6:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                    <a href="https://www.youtube.com/@jomakaze" target="_blank">
+                        <img class="profile-picture" src="./channel-pictures/jomaprofile.jpeg" >
+                    </a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            interviewing at a startup be like... (ft. Steven He)
+                        </p>
+                        <p class="video-author">
+                            Joma Tech &check;
+                        </p>
+                        <p class="video-stats">
+                            4.7M views &middot; 2 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=wsTv9y931o8" target="_blank">
+                    <img class="thumbnail" src="https://i.ytimg.com/vi/wsTv9y931o8/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLCHGxCJe_3CtJNfIMe6ckhh5OqBmQ">
+                </a>    
+                    <div class="video-time">6:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                    <a href="https://www.youtube.com/@coding2go" target="_blank">
+                        <img class="profile-picture" src="./channel-pictures/channels4_profile.jpeg" >
+                    </a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Learn CSS Flexbox in 20 Minutes (Course)
+                        </p>
+                        <p class="video-author">
+                            Coding2GO &check;
+                        </p>
+                        <p class="video-stats">
+                            299K views &middot; 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=tS7upsfuxmo" target="_blank">
+                    <img class="thumbnail" src="https://i.ytimg.com/vi/tS7upsfuxmo/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLA92S0fP58MKsAEAzWR3E7EMQeZkg">
+                </a>    
+                    <div class="video-time">6:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                    <a href="https://www.youtube.com/@javascriptmastery" target="_blank">
+                        <img class="profile-picture" src="./channel-pictures/js.jpg" >
+                    </a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Tailwind CSS Full Course 2023 | Build and Deploy a Nike Website
+                        </p>
+                        <p class="video-author">
+                            JavaScript Mastery &check;
+                        </p>
+                        <p class="video-stats">
+                            856K views &middot; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=iOeebAM_C5g" target="_blank">
+                    <img class="thumbnail" src="https://i.ytimg.com/vi/iOeebAM_C5g/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB-8PCSLcLgl7dgmC3coLl37o4skg">
+                </a>    
+                    <div class="video-time">6:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                    <a href="https://www.youtube.com/@Goodgis" target="_blank">
+                        <img class="profile-picture" src="./channel-pictures/channels4_profile.jpg" >
+                    </a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Making a Game with Java with No Experience
+                        </p>
+                        <p class="video-author">
+                            Goodgis &check;
+                        </p>
+                        <p class="video-stats">
+                            702K views &middot; 4 months ago
+                        </p>
+                    </div>
+                </div>
+          </div>  
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://i.ytimg.com/vi/T8ZKo8Wa7hw/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLDtLp214293lk0MSFDRj0h_W3uxUg">
-                <div class="video-time">6:08</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/theprimeagenprofile.jpeg" >
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        How To Find Time To Learn After Work | Prime Reacts
-                    </p>
-                    <p class="video-author">
-                        ThePrimeagen &check;
-                    </p>
-                    <p class="video-stats">
-                        534K views &middot; 1 year ago
-                    </p>
-                </div>
-            </div>
-        </div>
+          
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="	https://i.ytimg.com/vi/314OLE6mKOo/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLAjpWUrUJfXrJvfAcpe-1J0W0YL_w">
-                <div class="video-time">6:08</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/jomaprofile.jpeg" >
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        interviewing at a startup be like... (ft. Steven He)
-                    </p>
-                    <p class="video-author">
-                        Joma Tech &check;
-                    </p>
-                    <p class="video-stats">
-                        4.7M views &middot; 2 year ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://i.ytimg.com/vi/wsTv9y931o8/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLCHGxCJe_3CtJNfIMe6ckhh5OqBmQ">
-                <div class="video-time">6:08</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/channels4_profile.jpeg" >
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Learn CSS Flexbox in 20 Minutes (Course)
-                    </p>
-                    <p class="video-author">
-                        Coding2GO &check;
-                    </p>
-                    <p class="video-stats">
-                        299K views &middot; 4 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://i.ytimg.com/vi/tS7upsfuxmo/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLA92S0fP58MKsAEAzWR3E7EMQeZkg">
-                <div class="video-time">6:08</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/js.jpg" >
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Tailwind CSS Full Course 2023 | Build and Deploy a Nike Website
-                    </p>
-                    <p class="video-author">
-                        JavaScript Mastery &check;
-                    </p>
-                    <p class="video-stats">
-                        856K views &middot; 1 year ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://i.ytimg.com/vi/iOeebAM_C5g/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLB-8PCSLcLgl7dgmC3coLl37o4skg">
-                <div class="video-time">6:08</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="./channel-pictures/channels4_profile.jpg" >
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        How To Find Time To Learn After Work | Prime Reacts
-                    </p>
-                    <p class="video-author">
-                        Goodgis &check;
-                    </p>
-                    <p class="video-stats">
-                        678K views &middot; 4 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        </section>
+    </main>
 </body>
 </html>

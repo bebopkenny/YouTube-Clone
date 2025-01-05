@@ -21,11 +21,11 @@
 
 
 .channel-picture {
-    background-color: grey
+
 }
 
 .video-info {
-    background-color: grey;
+
 }
 
 .profile-picture {
@@ -62,6 +62,25 @@
     row-gap: 40px;
 }
 
+ @media (max-width: 750px) { /* if the screen size is 600px or less */
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+ @media (min-width: 751px) and (max-width: 999px) { /* this will cover the space between */
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+ @media (min-width: 1000px) { /*  once the screen size is 1000px this will activate */
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
 .video-time {
     background-color: black;
     color: white;
@@ -69,11 +88,22 @@
     border-radius: 2px;
     bottom: 10px;
     right: 5px;
-    font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500;
-    padding-left: 4px;
+     padding: 4px; /* this sets padding on all four sides */
+    /* padding-left: 4px;
     padding-right: 4px;
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 4px; */
 }
+
+
+/* 
+padding: 4px, set padding on all four sides
+padding: 4px 8px, 1st will set it vertical and 2nd will be :horizontal
+padding: 4px 10px 20px 30px,  1st padding top 2nd padding right 3rd padding bottom 4th padding left
+
+margin: 4px, set margin on all four sides
+margin: 4px 8px, 1st will set it vertical and 2nd will be :horizontal
+margin: 4px 10px 20px 30px,  1st margin top 2nd margin right 3rd margin bottom 4th margin left 
+*/
